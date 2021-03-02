@@ -502,11 +502,11 @@ if __name__ == '__main__':
         #committer = InputGitAuthor('readme-bot', '41898282+github-actions[bot]@users.noreply.github.com')
         if new_readme != rdmd:
             try:
-                repo.update_file(path=contents.path, message='Updated with Dev Metrics',
+                repo.update_file(path=contents.path, message='Update this repo README',
                                  content=new_readme, sha=contents.sha, branch='master')
             except:
-                repo.update_file(path=contents.path, message='Updated with Dev Metrics',
-                                 content=new_readme, sha=contents.sha, branch='main)
+                repo.update_file(path=contents.path, message='Update this repo README',
+                                 content=new_readme, sha=contents.sha, branch='main')
             print("Readme updated")
     except Exception as e:
         traceback.print_exc()
